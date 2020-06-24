@@ -151,6 +151,7 @@ container.appendChild(uiContainer);
 var octopusUiContainer = document.createElement('div');
 octopusUiContainer.className = 'octopus-pnlm-ui';
 uiContainer.appendChild(octopusUiContainer);
+container.appendChild(octopusUiContainer);
 
 // Create container for renderer
 var renderContainer = document.createElement('div');
