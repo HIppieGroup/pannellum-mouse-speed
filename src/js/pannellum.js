@@ -148,6 +148,10 @@ var uiContainer = document.createElement('div');
 uiContainer.className = 'pnlm-ui';
 container.appendChild(uiContainer);
 
+var octopusUiContainer = document.createElement('div');
+octopusUiContainer.className = 'octopus-pnlm-ui';
+uiContainer.appendChild(octopusUiContainer);
+
 // Create container for renderer
 var renderContainer = document.createElement('div');
 renderContainer.className = 'pnlm-render-container';
@@ -269,7 +273,7 @@ if (window.DeviceOrientationEvent && location.protocol == 'https:' &&
 // Compass
 var compass = document.createElement('div');
 compass.className = 'pnlm-compass pnlm-controls pnlm-control';
-uiContainer.appendChild(compass);
+octopusUiContainer.appendChild(compass);
 
 // Load and process configuration
 if (initialConfig.firstScene) {
