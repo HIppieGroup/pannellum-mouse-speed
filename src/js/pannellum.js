@@ -275,6 +275,7 @@ container.appendChild(octopusUiContainer);
 var compass = document.createElement('div');
 compass.className = 'pnlm-compass pnlm-controls pnlm-control';
 octopusUiContainer.appendChild(compass);
+uiContainer.appendChild(compass);
 
 // Load and process configuration
 if (initialConfig.firstScene) {
