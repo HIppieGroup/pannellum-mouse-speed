@@ -270,12 +270,12 @@ if (window.DeviceOrientationEvent && location.protocol == 'https:' &&
 var octopusUiContainer = document.createElement('div');
 octopusUiContainer.className = 'octopus-pnlm-ui';
 uiContainer.appendChild(octopusUiContainer);
-container.appendChild(octopusUiContainer);
+// container.appendChild(octopusUiContainer);
 
 var compass = document.createElement('div');
 compass.className = 'pnlm-compass pnlm-controls pnlm-control';
 octopusUiContainer.appendChild(compass);
-uiContainer.appendChild(compass);
+// uiContainer.appendChild(compass);
 
 // Load and process configuration
 if (initialConfig.firstScene) {
